@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a39372b1-09b7-4dc8-a299-8cf69c140f72": {
+      "ProjectGuid": "a39372b1-09b7-4dc8-a299-8cf69c140f72",
+      "DisplayName": "Painters",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
