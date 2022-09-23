@@ -1,0 +1,66 @@
+﻿@model Painters.Models.Painting
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Painting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Painter.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Painter.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Museum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Museum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Canvas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Canvas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CanvasType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CanvasType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

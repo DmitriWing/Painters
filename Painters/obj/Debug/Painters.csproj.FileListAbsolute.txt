@@ -72,8 +72,12 @@ D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\System.Web.WebPages.Razor.xml
 D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\Newtonsoft.Json.xml
 D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\Antlr3.Runtime.pdb
 D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.csproj.AssemblyReference.cache
 D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.csproj.CoreCompileInputs.cache
 D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.csproj.CopyComplete
 D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.dll
 D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.pdb
+D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\EntityFramework.dll
+D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\EntityFramework.SqlServer.dll
+D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\EntityFramework.xml
+D:\JKTV21\ASP.NetProjects\Painters\Painters\bin\EntityFramework.SqlServer.xml
+D:\JKTV21\ASP.NetProjects\Painters\Painters\obj\Debug\Painters.csproj.AssemblyReference.cache

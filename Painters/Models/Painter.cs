@@ -14,7 +14,7 @@ namespace Painters.Models
         public string Name { get; set; }
 
         [Display(Name = "Place of birth")]
-        public int Country { get; set; }
+        public string Country { get; set; }
 
         [Display(Name = "About")]
         public string Biography { get; set; }
