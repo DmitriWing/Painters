@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Painters.Models.Painting>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col index-cards text-center">
+            <h4 class="inCard">
+                @Html.DisplayFor(modelItem => item.Title)
+            </h4>
+
+            <div class="inCard">
+                Location: 
+                @Html.DisplayFor(modelItem => item.Museum)
+            </div>
+
+            <div class="inCardImg">
+                <img class="index-img" src="@Url.Action("RenderImage", new { id = item.Id})" />
+            </div>
+
+         </div>
+
+    }
+</div>

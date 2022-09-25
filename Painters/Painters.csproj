@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaintersController.cs" />
+    <Compile Include="Controllers\PaintersPaintingsController.cs" />
     <Compile Include="Controllers\PaintingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -184,6 +185,10 @@
     <Content Include="Views\Paintings\Details.cshtml" />
     <Content Include="Views\Paintings\Edit.cshtml" />
     <Content Include="Views\Paintings\Index.cshtml" />
+    <Content Include="Views\Painters\PaintingsOfPainters.cshtml" />
+    <Content Include="Views\PaintersPaintings\Details.cshtml" />
+    <Content Include="Views\PaintersPaintings\Index.cshtml" />
+    <Content Include="Views\PaintersPaintings\PingsOfPers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

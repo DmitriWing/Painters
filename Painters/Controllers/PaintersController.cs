@@ -29,6 +29,7 @@ namespace Painters.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Painter painter = db.Painters.Find(id);
+            painter = db.Painters.Include(p => p.Paintings).FirstOrDefault(p => p.Id == id);
             if (painter == null)
             {
                 return HttpNotFound();

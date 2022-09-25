@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Painters.Models.Painting>
+
+@{
+    ViewBag.Title = "PaintingsOfPainters";
+}
+
+
+
+@foreach (var item in Model) {
+    <div class="row index-cards text-center">
+        <div class="inCard">
+            @Html.DisplayFor(modelItem => item.Title)
+        </div>
+        <div class="inCard">
+            @Html.DisplayNameFor(modelItem => item.Museum)
+            @Html.DisplayFor(modelItem => item.Museum)
+        </div>
+        <div class="inCardImg">
+            <img class="index-img" src="@Url.Action("RenderImage", "Paintings", new { id = item.Id})" />
+        </div>
+        <div class="">
+            @Html.ActionLink("Edit", "Edit", "Paintings", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", "Paintings", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", "Paintings", new { id=item.Id })
+        </div>
+    </div>
+}
+
