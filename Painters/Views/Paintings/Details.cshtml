@@ -7,6 +7,48 @@
 <h2>Details</h2>
 
 <div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            @if (Model.Canvas != null)
+            {
+                <img src="@Url.Action("GetImage", new {Model.Id})" class="img-rounded" />
+            }
+            <table class="table table-hover">
+                <tr>
+                    <th scope="row">@Html.DisplayNameFor(model => model.Painter.Name)</th>
+                    <td>@Html.DisplayFor(model => model.Painter.Name)</td>      <!-- why don't show the name???? -->
+                </tr>
+                <tr>
+                    <th scope="row">@Html.DisplayNameFor(model => model.Title)</th>
+                    <td>@Html.DisplayFor(model => model.Title)</td>
+                </tr>
+                <tr>
+                    <th scope="row">@Html.DisplayNameFor(model => model.Year)</th>
+                    <td>@Html.DisplayFor(model => model.Year)</td>
+                </tr>
+                <tr>
+                    <th scope="row">@Html.DisplayNameFor(model => model.Museum)</th>
+                    <td>@Html.DisplayFor(model => model.Museum)</td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" class="spannedCell text-center">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                        @Html.ActionLink("Back to List", "Index") |
+                        @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--<div>
     <h4>Painting</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -50,17 +92,11 @@
             @Html.DisplayFor(model => model.Canvas)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CanvasType)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CanvasType)
-        </dd>
 
     </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>-->

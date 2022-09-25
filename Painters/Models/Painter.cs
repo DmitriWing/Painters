@@ -10,7 +10,7 @@ namespace Painters.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Name and Surename")]
+        [Display(Name = "Author")]
         public string Name { get; set; }
 
         [Display(Name = "Place of birth")]

@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Painters.Models;
@@ -46,8 +47,17 @@ namespace Painters.Controllers
             }
             return null;
         }
+        // render image from byte[] to picture
+        public async Task<ActionResult> RenderImage(int id)
+        {
+            Painter item = await db.Painters.FindAsync(id);
 
-        // GET: Painters/Create
+            byte[] photoBack = item.Photo;
+
+            return File(photoBack, "image/png");
+        }
+
+            // GET: Painters/Create
         public ActionResult Create()
         {
             return View();
