@@ -50,7 +50,7 @@
                     <img src="@Url.Action("GetImage", new { Model.Id })" class="img-rounded" />
                 }
                 <input type="file" name="Image" class="form-control" />
-                @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "textdanger" })
+                @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "text-danger" })
             </div>
         </div>
 
